@@ -7,6 +7,14 @@ void die(std::string msg = "Program exiting.") {
 	exit(1);
 }
 
+//TODO This might need to return a special class
+//TODO Return an ipaddress? 
+class ipv6{};
+ipv6 compress_ipv6() {
+	ipv6 ip;
+	return ip;
+}
+
 int main(int argc, char* argv[]) {
 	int choice = -1;
 	std::string ipv4;
@@ -20,23 +28,31 @@ int main(int argc, char* argv[]) {
 			std::cout << "2) Enter IPv6" << std::endl;
 			std::cout << "3) Convert IPv4 to IPv6" << std::endl;
 			std::cout << "4) Convert IPv6 to IPv4" << std::endl;
+			std::cout << "5) Compress IPv6" << std::endl;
 			std::cout << "0) Exit Program." << std::endl;
 			std::cin >> choice;
 			switch (choice) {
-				case 0: 
-					std::cout << "" << std::endl;
-					break;
+				// Enter IPv4 and IPv6 -----
 				case 1: 
 					std::cout << "" << std::endl;
 					break;
 				case 2: 
 					std::cout << "" << std::endl;
 					break;
+				// IP Tool Section -----
 				case 3: 
 					std::cout << "" << std::endl;
 					break;
 				case 4: 
 					std::cout << "" << std::endl;
+					break;
+				case 5: 
+					std::cout << "" << std::endl;
+					break;
+				// Exit case -----
+				case 0: 
+					std::cout << "" << std::endl;
+					return 0;
 					break;
 				default: 
 					std::cout << "Not a valid option. Please choose again." << std::endl;
