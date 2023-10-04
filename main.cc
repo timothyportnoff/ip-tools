@@ -9,10 +9,17 @@ void die(std::string msg = "Program exiting.") {
 
 //TODO This might need to return a special class
 //TODO Return an ipaddress? 
-class ipv6{};
+class ipv6{
+	private:
+		bool* bitfield[64];
+	public:
+		bool* get_bitfield(){}
+		void set_bitfield(){}
+
+};
+
 ipv6 compress_ipv6() {
 	//An Ipv6 Address is essentially 64 1's and 0's, so that's how we'll store it. Maybe I should use a vec...
-	bool* bitfield[64];
 	ipv6 ip;
 	return ip;
 }
