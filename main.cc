@@ -9,8 +9,8 @@ void die(std::string msg = "Program exiting.") {
 
 class ipv4{
 	private:
-		bool* bitfield[32];
-		int num_bits = 32;
+		const static int num_bits = 32;
+		bool* bitfield[num_bits];
 	public:
 		bool* get_bitfield(){}
 		void set_bitfield(){}
@@ -18,8 +18,8 @@ class ipv4{
 
 class ipv6{
 	private:
-		bool* bitfield[64];
-		int num_bits = 32;
+		const static int num_bits = 64;
+		bool* bitfield[num_bits];
 	public:
 		bool* get_bitfield(){}
 		void set_bitfield(){}
