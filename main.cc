@@ -7,15 +7,22 @@ void die(std::string msg = "Program exiting.") {
 	exit(1);
 }
 
-//TODO This might need to return a special class
-//TODO Return an ipaddress? 
-class ipv6{
+class ipv4{
 	private:
-		bool* bitfield[64];
+		bool* bitfield[32];
+		int num_bits = 32;
 	public:
 		bool* get_bitfield(){}
 		void set_bitfield(){}
+};
 
+class ipv6{
+	private:
+		bool* bitfield[64];
+		int num_bits = 32;
+	public:
+		bool* get_bitfield(){}
+		void set_bitfield(){}
 };
 
 ipv6 compress_ipv6() {
