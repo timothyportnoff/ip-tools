@@ -14,6 +14,9 @@ class ipv4{
 	public:
 		bool* get_bitfield(){}
 		void set_bitfield(){}
+		//Not sure if there is a difference in long_form and short_form for v4
+		string get_shortform(){}
+		string get_longform(){}
 };
 
 class ipv6{
@@ -23,6 +26,8 @@ class ipv6{
 	public:
 		bool* get_bitfield(){}
 		void set_bitfield(){}
+		string get_shortform(){} 
+		string get_longform(){}
 };
 
 ipv6 compress_ipv6() {
